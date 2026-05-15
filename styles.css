@@ -26,13 +26,13 @@
 
 body {
     display: grid;
-    font-family: var(--font-main);
     line-height: 1.6;
     justify-items: center;
 }
 
 h1 {
-    font-size: 40px;
+    font-family: var(--font-main);
+    font-size: 2.5rem;
     font-weight: 500;  
 }
 
@@ -43,14 +43,9 @@ h2 {
     padding-top: 1.5rem;
 }
 
-h3 {
-    font-family: var(--font-secondary);
-}
-
 ul {
     padding: .5rem .5rem 1.6rem 1.4rem;
     line-height: 2.2rem;
-    font-family: var(--font-secondary);
     border-bottom: 2px solid var(--color-border);
 }
 
@@ -63,7 +58,6 @@ ol {
     padding-left: 1.4rem;
     padding-bottom: 1.8rem;
     line-height: 1.6rem;
-    font-family: var(--font-secondary);
     border-bottom: 2px solid var(--color-border);
 }
 
@@ -72,8 +66,7 @@ ol li {
     padding-left: 1rem;
 }
 
-p {
-    font-family: var(--font-secondary);
+p { 
     font-weight: 400;
     padding: 1rem 0 1.5rem;
 }
@@ -100,6 +93,7 @@ ol li::marker {
     flex-direction: column;
     background-color: var(--color-card);
     border-radius: var(--radius);
+    font-family: var(--font-secondary);
     padding: 3rem;
     max-width: 800px;
 }
@@ -138,12 +132,10 @@ ol li::marker {
 
 .nutrition-table {
     width: 100%;
-    font-family: var(--font-secondary);
 }
 
 .nutrition-table th,
-.nutrition-table td {
-    
+.nutrition-table td {  
     padding: 1rem 0 0 2rem;
     text-align: left;
     align-content: center;
@@ -161,6 +153,7 @@ td {
 table {
   border-collapse: collapse;
 }
+
 table td, table th{
   border: 2px solid #E3DDD7; 
 }
@@ -175,12 +168,8 @@ table tr:last-child th {
   border-bottom: 0;
 }
 
+table tr th,
 table tr td:last-child {
-  border-right: 0;
-  border-left: 0;
-}
-
-table tr th {
   border-right: 0;
   border-left: 0;
 }
