@@ -1,0 +1,213 @@
+/* ===============
+    General Styles
+    =============== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-bg: #F3E5D7;
+    --color-card: #ffffff;
+    --color-text-accent:#7A284E;
+    --color-text-background: #FFF7FB;
+    --color-text-secondary: #854632;
+    --color-border: #E3DDD7;
+    
+    --radius: 15px;
+
+    --font-main: 'Young Serif', serif;
+    --font-secondary: 'Outfit', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    place-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;  
+}
+
+h2 {
+    font-family: var(--font-main);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    padding-top: 1.5rem;
+}
+
+h3 {
+    font-family: var(--font-secondary);
+}
+
+ul {
+    padding: .5rem .5rem 1.6rem 1.4rem;
+    line-height: 2.2rem;
+    font-family: var(--font-secondary);border-bottom: 2px solid var(--color-border);
+}
+
+ul li {
+    padding-left: 1rem;
+}
+
+ol {
+    margin-bottom: 1rem;
+    padding-left: 1.4rem;
+    padding-bottom: 1.8rem;
+    line-height: 1.6rem;
+    font-family: var(--font-secondary);
+    border-bottom: 2px solid var(--color-border);
+}
+
+ol li {
+    margin-top: .8rem;
+    padding-left: 1rem;
+}
+
+p {
+    display: wrap;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    padding: 1rem 0 1.5rem;
+}
+
+li::marker {
+    color: var(--color-text-secondary);
+}
+
+ol li::marker {
+    font-weight: 700;
+}
+
+/* ===============
+    Ingredients Card Styles
+    =============== */
+
+.container {
+    background-color: var(--color-bg);
+    border-radius: var(--radius);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-card);
+    border-radius: var(--radius);
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+}
+
+/* ===============
+    Card Text Styles
+    =============== */
+
+.details {
+    background-color: var(--color-text-background);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    
+}
+
+.details h3 {
+    color: var(--color-text-accent);
+    margin-bottom: .5rem;
+    margin-left: -22px
+}
+
+.details ul {
+    padding-left: 2rem;
+    border-bottom: none;    
+}
+
+/* ===============
+    Table Styles
+    =============== */
+
+.nutrition-table {
+    width: 100%;
+    font-family: var(--font-secondary);
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    
+    padding: 1rem 0 0 2rem;
+    text-align: left;
+    align-content: center;
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    color: var(--color-text-secondary);
+    font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td {
+  border: 2px solid #E3DDD7; 
+}
+
+table th {
+  border: 2px solid #E3DDD7; 
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:first-child th {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr:last-child th {
+  border-bottom: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+table tr td:last-child {
+  border-left: 0;
+}
+
+table tr th {
+  border-right: 0;
+}
+
+table tr th {
+  border-left: 0;
+}
+
+/* ===============
+    MobileResponsive Styles
+    =============== */
+
+@media (min-width: 700px) {
+    body {
+        background-color: var(--color-bg)!important;
+    }
+}
